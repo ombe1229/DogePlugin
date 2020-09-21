@@ -1,29 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b45504-3974-4fc8-9d06-5d068ed1fe9b" name="Default Changelist" comment="" />
+    <list default="true" id="d7b45504-3974-4fc8-9d06-5d068ed1fe9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DogePlugin/Database/Database.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DogePlugin/Database/DatabasePlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DogePlugin/Database/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DogePlugin/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/AppVeyorSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/LiteDB.5.0.9.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/icon_64x64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/lib/net45/LiteDB.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/lib/net45/LiteDB.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/lib/netstandard1.3/LiteDB.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/lib/netstandard1.3/LiteDB.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/lib/netstandard2.0/LiteDB.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/LiteDB.5.0.9/lib/netstandard2.0/LiteDB.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/Configs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/Configs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/ConsoleCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/Commands/ConsoleCommands.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/DogePlugin.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/DogePlugin.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/Plugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DogePlugin/Configs.cs" />
-        <option value="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" />
         <option value="$PROJECT_DIR$/DogePlugin/ConsoleCommands.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/Configs.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/Database/Player.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/Database/Database.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/Database/DatabasePlayer.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/Commands/ConsoleCommands.cs" />
         <option value="$PROJECT_DIR$/DogePlugin/Plugin.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1hghmOhlbrdtFGC7H3x2CPHIcew" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="discord-application" />
   </component>
@@ -55,16 +111,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600438803182</updated>
-      <workItem from="1600438807335" duration="812000" />
+      <workItem from="1600438807335" duration="1420000" />
+      <workItem from="1600488300068" duration="1696000" />
+      <workItem from="1600705828021" duration="2954000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
