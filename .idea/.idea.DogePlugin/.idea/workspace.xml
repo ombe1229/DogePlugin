@@ -19,13 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b45504-3974-4fc8-9d06-5d068ed1fe9b" name="Default Changelist" comment="데이터베이스, 스탯 명령어, 닉네임 필터링 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DogePlugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogePlugin/Commands/ConsoleCommands.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/Commands/ConsoleCommands.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogePlugin/Configs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/Configs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogePlugin/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/Plugin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.csprojAssemblyReference.cache" afterDir="false" />
+    <list default="true" id="d7b45504-3974-4fc8-9d06-5d068ed1fe9b" name="Default Changelist" comment="주석 수정">
+      <change beforePath="$PROJECT_DIR$/DogePlugin/bin/Debug/DogePlugin.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/bin/Debug/DogePlugin.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/bin/Debug/DogePlugin.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/bin/Debug/DogePlugin.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DogePlugin/obj/Debug/DogePlugin.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +42,8 @@
         <option value="$PROJECT_DIR$/DogePlugin/Plugin.cs" />
         <option value="$PROJECT_DIR$/DogePlugin/Configs.cs" />
         <option value="$PROJECT_DIR$/DogePlugin/Database/Database.cs" />
-        <option value="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" />
         <option value="$PROJECT_DIR$/DogePlugin/Commands/ConsoleCommands.cs" />
+        <option value="$PROJECT_DIR$/DogePlugin/EventHandlers.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +94,7 @@
       <workItem from="1600438807335" duration="1420000" />
       <workItem from="1600488300068" duration="1696000" />
       <workItem from="1600705828021" duration="3198000" />
-      <workItem from="1600737347421" duration="2040000" />
+      <workItem from="1600737347421" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="데이터베이스, 스탯 명령어, 닉네임 필터링 추가">
       <created>1600708858322</created>
@@ -105,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600708858322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="레벨링, 멀티어드민 로그 출력 기능 추가">
+      <created>1600739595570</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600739595570</updated>
+    </task>
+    <task id="LOCAL-00003" summary="주석 수정">
+      <created>1600739707151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600739707151</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +141,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="데이터베이스, 스탯 명령어, 닉네임 필터링 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="데이터베이스, 스탯 명령어, 닉네임 필터링 추가" />
+    <MESSAGE value="레벨링, 멀티어드민 로그 출력 기능 추가" />
+    <MESSAGE value="주석 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="주석 수정" />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="56" key="SettingsEditor" timestamp="1600438849054">

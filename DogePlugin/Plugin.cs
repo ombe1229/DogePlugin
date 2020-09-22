@@ -15,7 +15,7 @@ namespace DogePlugin
         public static bool IsStarted { get; set; }
         public EventHandlers EventHandlers { get; private set; }
         public ConsoleCommands PlayerConsoleCommands { get; private set; }
-        public Database.Database DatabasePlayerData { get; private set; }
+        public Database DatabasePlayerData { get; private set; }
         public Player Player { get; private set; }
 
         public void LoadEvents()
@@ -34,7 +34,7 @@ namespace DogePlugin
             if (!Config.IsEnabled) return;
             EventHandlers = new EventHandlers(this);
             PlayerConsoleCommands = new ConsoleCommands(this);
-            DatabasePlayerData = new Database.Database(this);
+            DatabasePlayerData = new Database(this);
             LoadEvents();
             LoadCommands();
             DatabasePlayerData.CreateDatabase();
@@ -46,7 +46,7 @@ namespace DogePlugin
         {
             EventHandlers = null;
             PlayerConsoleCommands = null;
-            Database.Database.LiteDatabase.Dispose();
+            Database.LiteDatabase.Dispose();
         }
 
         public override void OnReloaded()

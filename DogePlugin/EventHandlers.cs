@@ -14,16 +14,16 @@ namespace DogePlugin
 
         internal void OnPlayerJoin(JoinedEventArgs ev)
         {
-            if (!Database.Database.LiteDatabase.GetCollection<Player>().Exists(player => player.Id == ev.Player.GetRawUserId()))
+            if (!Database.LiteDatabase.GetCollection<Player>().Exists(player => player.Id == ev.Player.GetRawUserId()))
             {
                 Log.Info(ev.Player.Nickname + " 은(는) 데이터베이스에 등록되어 있지 않습니다!");
                 _pluginInstance.DatabasePlayerData.AddPlayer(ev.Player);
             }
             
             var databasePlayer = ev.Player.GetDatabasePlayer();
-            if (Database.Database.PlayerData.ContainsKey(ev.Player))
+            if (Database.PlayerData.ContainsKey(ev.Player))
             {
-                Database.Database.PlayerData.Add(ev.Player, databasePlayer);
+                Database.PlayerData.Add(ev.Player, databasePlayer);
                 databasePlayer.LastSeen = DateTime.Now;
                 databasePlayer.Name = ev.Player.Nickname;
                 if (databasePlayer.FirstJoin == DateTime.MinValue) databasePlayer.FirstJoin = DateTime.Now;
@@ -46,10 +46,10 @@ namespace DogePlugin
         internal void OnPlayerLeft(LeftEventArgs ev)
         {
             if (ev.Player.Nickname != "Dedicated Server" && ev.Player != null &&
-                Database.Database.PlayerData.ContainsKey(ev.Player))
+                Database.PlayerData.ContainsKey(ev.Player))
             {
                 ev.Player.GetDatabasePlayer().SetCurrentDayPlayTime();
-                Database.Database.LiteDatabase.GetCollection<Player>().Update(Database.Database.PlayerData[ev.Player]);
+                Database.LiteDatabase.GetCollection<Player>().Update(Database.PlayerData[ev.Player]);
             }
         }
         
