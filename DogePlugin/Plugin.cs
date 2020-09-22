@@ -39,7 +39,7 @@ namespace DogePlugin
             LoadCommands();
             DatabasePlayerData.CreateDatabase();
             DatabasePlayerData.OpenDatabase();
-            Log.Info("DogePlugin 활성화.");
+            Log.Info("DogePlugin 활성화");
         }
 
         public override void OnDisabled()

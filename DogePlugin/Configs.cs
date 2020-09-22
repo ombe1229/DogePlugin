@@ -7,13 +7,13 @@ namespace DogePlugin
     {
         public bool IsEnabled { get; set; } = true;
 
-        [Description("Use Nickname Filtering?")]
+        [Description("닉네임 필터링 사용 여부")]
         public bool NicknameFilteringEnable { get; private set; } = true;
 
-        [Description("Database name")]
+        [Description("데이터베이스 이름(기본적으로 변경X)")]
         public string DatabaseName { get; private set; } = "DogePlugin";
 
-        [Description("In which folder database should be stored?")]
+        [Description("데이터베이스를 저장할 폴더(기본적으로 변경X)")]
         public string DatabaseFolder { get; private set; } = "EXILED";
     }
 }

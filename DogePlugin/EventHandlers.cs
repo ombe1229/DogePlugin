@@ -39,6 +39,7 @@ namespace DogePlugin
                 }
 
                 if (nickname != ev.Player.Nickname) ev.Player.DisplayNickname = nickname;
+                Log.Info($"{ev.Player.Nickname} 에게 필터링 단어가 포함되어 삭제했습니다.\n현재 닉네임:{nickname}");
             }
         }
 
@@ -61,11 +62,19 @@ namespace DogePlugin
         {
             int nowExp = player.GetDatabasePlayer().Exp;
             int nowLevel = player.GetDatabasePlayer().Level;
-            if (nowExp + exp >= (nowLevel + 10) * 2)
+            if (nowExp + exp >= (nowLevel*nowLevel+10)*10)
             {
+                /*
+                 * 1lv : 110
+                 * 2lv : 140 (+30)
+                 * 3lv : 190 (+50)
+                 * 4lv : 260 (+70)
+                 * 5lv : 350 (+90)
+                 */
                 player.GetDatabasePlayer().Level++;
                 player.GetDatabasePlayer().Exp = 0;
                 player.Broadcast(5,$"레벨업!\n당신의 레벨이 <color=green>{player.GetDatabasePlayer().Level}</color>레벨으로 올랐습니다.\n`를 눌러 콘솔창을 연 뒤 <color=green>.tats</color> 명령어로 확인이 가능합니다!");
+                Log.Info($"{player}이(가) 레벨업했습니다. 현재 레벨: {player.GetDatabasePlayer().Level}");
             }
             else
             {
