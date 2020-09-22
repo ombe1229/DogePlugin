@@ -64,7 +64,7 @@ namespace DogePlugin
             int nowLevel = player.GetDatabasePlayer().Level;
             if (nowExp + exp >= (nowLevel*nowLevel+10)*10)
             {
-                /*
+                 /*
                  * 1lv : 110
                  * 2lv : 140 (+30)
                  * 3lv : 190 (+50)
