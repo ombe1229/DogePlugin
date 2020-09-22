@@ -12,6 +12,64 @@ namespace DogePlugin
         private readonly DogePlugin _pluginInstance;
         public EventHandlers(DogePlugin pluginInstance) => this._pluginInstance = pluginInstance;
 
+        
+        internal void OnRoundStarting()
+        {
+            DogePlugin.IsStarted = true;
+
+            foreach (var player in Exiled.API.Features.Player.List)
+            {
+                AddExp(player, 50);
+            }
+            Log.Info("라운드 시작 경험치 전체에게 50 지급.");
+
+            int CdpCount = 0;
+            int RscCount = 0;
+            int ChiCount = 0;
+            int MtfCount = 0;
+            int ScpCount = 0;
+            foreach (var player in Exiled.API.Features.Player.List)
+            {
+                switch (player.Team)
+                {
+                    case Team.CDP:
+                        CdpCount++;
+                        break;
+                    case Team.RSC:
+                        RscCount++;
+                        break;
+                    case Team.CHI:
+                        ChiCount++;
+                        break;
+                    case Team.MTF:
+                        MtfCount++;
+                        break;
+                    case Team.SCP:
+                        ScpCount++;
+                        break;
+                }
+            }
+            Log.Info($"라운드 시작.\nD계급:{CdpCount} | 과학자:{RscCount} | 혼돈의 반란:{ChiCount} | MTF:{MtfCount} | SCP:{ScpCount}");
+        }
+
+        internal void OnRoundEnding(RoundEndedEventArgs ev)
+        {
+            DogePlugin.IsStarted = false;
+            
+            foreach (var player in Exiled.API.Features.Player.List)
+            {
+                AddExp(player, 50);
+            }
+            Log.Info("라운드 종료 경험치 전체에게 50 지급.");
+            
+            Log.Info($"라운드 종료.\n승리한 팀:{ev.LeadingTeam}");
+        }
+
+        internal void OnRoundRestarting()
+        {
+            DogePlugin.IsStarted = false;
+        }
+        
         internal void OnPlayerJoin(JoinedEventArgs ev)
         {
             if (!Database.LiteDatabase.GetCollection<Player>().Exists(player => player.Id == ev.Player.GetRawUserId()))
@@ -53,6 +111,10 @@ namespace DogePlugin
             }
         }
         
+
+
+
+
         private string NicknameFiltering(string nickname, string FilteringWord)
         {
             return Regex.Replace(nickname, FilteringWord, "", RegexOptions.IgnoreCase);
@@ -65,11 +127,11 @@ namespace DogePlugin
             if (nowExp + exp >= (nowLevel*nowLevel+10)*10)
             {
                  /*
-                 * 1lv : 110
-                 * 2lv : 140 (+30)
-                 * 3lv : 190 (+50)
-                 * 4lv : 260 (+70)
-                 * 5lv : 350 (+90)
+                 * 1lv -> 2lv : 110
+                 * 2lv -> 3lv : 140 (+30)
+                 * 3lv -> 4lv : 190 (+50)
+                 * 4lv -> 5lv : 260 (+70)
+                 * 5lv -> 6lv : 350 (+90)
                  */
                 player.GetDatabasePlayer().Level++;
                 player.GetDatabasePlayer().Exp = 0;

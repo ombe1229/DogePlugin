@@ -20,6 +20,10 @@ namespace DogePlugin
 
         public void LoadEvents()
         {
+            ServerEvents.RoundStarted += EventHandlers.OnRoundStarting;
+            ServerEvents.RoundEnded += EventHandlers.OnRoundEnding;
+            ServerEvents.RestartingRound += EventHandlers.OnRoundRestarting;
+            
             PlayerEvents.Joined += EventHandlers.OnPlayerJoin;
             PlayerEvents.Left += EventHandlers.OnPlayerLeft;
         }
@@ -44,6 +48,13 @@ namespace DogePlugin
 
         public override void OnDisabled()
         {
+            ServerEvents.RoundStarted -= EventHandlers.OnRoundStarting;
+            ServerEvents.RoundEnded -= EventHandlers.OnRoundEnding;
+            ServerEvents.RestartingRound -= EventHandlers.OnRoundRestarting;
+            
+            PlayerEvents.Joined -= EventHandlers.OnPlayerJoin;
+            PlayerEvents.Left -= EventHandlers.OnPlayerLeft;
+            
             EventHandlers = null;
             PlayerConsoleCommands = null;
             Database.LiteDatabase.Dispose();
