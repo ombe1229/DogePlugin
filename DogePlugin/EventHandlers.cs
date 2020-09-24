@@ -93,7 +93,7 @@ namespace DogePlugin
                 string nickname = ev.Player.Nickname;
                 for (int i = 0; i < FilteringWords.Length; i++)
                 {
-                    nickname = NicknameFiltering(ev.Player.Nickname, FilteringWords[i]);
+                    nickname = Regex.Replace(nickname, FilteringWords[i], "", RegexOptions.IgnoreCase);
                 }
 
                 if (nickname != ev.Player.Nickname) ev.Player.DisplayNickname = nickname;
@@ -115,11 +115,7 @@ namespace DogePlugin
 
 
 
-        private string NicknameFiltering(string nickname, string FilteringWord)
-        {
-            return Regex.Replace(nickname, FilteringWord, "", RegexOptions.IgnoreCase);
-        }
-        
+      
         private static void AddExp(Exiled.API.Features.Player player, int exp)
         {
             int nowExp = player.GetDatabasePlayer().Exp;
