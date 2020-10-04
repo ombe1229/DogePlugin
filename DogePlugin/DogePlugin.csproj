@@ -79,12 +79,14 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Commands\Commands.cs" />
         <Compile Include="Commands\ConsoleCommands.cs" />
         <Compile Include="Configs.cs" />
         <Compile Include="Database\Database.cs" />
         <Compile Include="Database\DatabasePlayer.cs" />
         <Compile Include="Database\Player.cs" />
         <Compile Include="EventHandlers.cs" />
+        <Compile Include="Functions.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
