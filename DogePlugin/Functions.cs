@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
+using Hints;
 using Mirror;
 using RemoteAdmin;
 using Respawning;
@@ -81,6 +82,16 @@ namespace DogePlugin
         public static T GetRandomOne<T>(this List<T> list)
         {
             return list[UnityEngine.Random.Range(0, list.Count)];
+        }
+
+        public static void ShowHitmarker(this Exiled.API.Features.Player player)
+        {
+            player.ReferenceHub.GetComponent<Scp173PlayerScript>().CallTargetHitMarker(player.Connection);
+        }
+
+        public static void SendTextHint(this Exiled.API.Features.Player player, string text, ushort time)
+        {
+            player.ReferenceHub.hints.Show(new TextHint(text, new HintParameter[] { new StringHintParameter("") }, new HintEffect[] { HintEffectPresets.TrailingPulseAlpha(0.5f,1f,0.5f,2f,0f,2)}, time));
         }
     }
 }
